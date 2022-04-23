@@ -84,8 +84,9 @@
         width: 99vw;
         top: 6.5rem;
         height: 30vh;
-        padding-left: 2rem;
+        padding-left: 4.5rem;
         background-color: #fff;
+        z-index: 10;
     }
 
     .nav_login_heading{
