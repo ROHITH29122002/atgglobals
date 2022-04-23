@@ -92,6 +92,7 @@
     .nav_login_heading{
         position: relative;
         top: -2rem;
+        padding-left: 1rem;
     }
 
     .nav_search_div,.nav_login_div{
