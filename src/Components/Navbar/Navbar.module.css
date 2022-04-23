@@ -1,0 +1,35 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo_div{
+    padding-top: 2rem;
+    margin-left: 5rem;
+}
+.nav_search_div{
+    padding-top: 2rem;
+}
+
+
+.input_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.input_search{
+    padding: 1rem;
+}
+
+.nav_input{
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    width: 28rem;
+    background-color: #F2F2F2;
+    padding: 1.1rem 1rem;
+}
