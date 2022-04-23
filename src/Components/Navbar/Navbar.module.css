@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .nav_logo_div{
@@ -19,6 +20,7 @@
     align-items: center;
     background-color: #F2F2F2;
     border-radius: 10px;
+    height: 4rem;
 }
 
 .input_search{
@@ -32,4 +34,67 @@
     width: 28rem;
     background-color: #F2F2F2;
     padding: 1.1rem 1rem;
+}
+
+.nav_login_div{
+    padding-top: 2rem;
+    margin-right: 4rem;
+}
+
+.nav_login_heading{
+    font-weight: medium;
+    font-size: 1.6rem;
+    line-height: 20px;
+}
+
+.nav_login_span{
+    color: blue;
+}
+
+.open{
+    display: none;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+.hamburger{
+    width: 100%;
+    height: 100%;
+}
+
+.nav_collapse{
+    display: none;
+}
+
+@media screen and (max-width : 850px){
+    .open{
+        display: flex;
+        margin-top: 2rem;
+        margin-right: 5rem;
+    }
+
+    #hidden{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+        position: absolute;
+        width: 99vw;
+        top: 8rem;
+        height: 30vh;
+        padding-left: 2rem;
+        background-color: rgba(0,0,0,0.1);
+    }
+
+    .nav_login_heading{
+        position: relative;
+        top: -2rem;
+    }
+
+    .nav_search_div,.nav_login_div{
+        display: none;
+    }
 }
