@@ -69,6 +69,21 @@ function MainNav() {
         <button className={styles.write_btn}>Write a Post <img className={styles.arrow_down_img} src={arrow_down} alt='arrow down'/></button>
         <button className={styles.group_btn}><img className={styles.users_img}  src={users} alt='users'/>Join Group</button>
       </div>
+      <div className={styles.hidden_nav_left}>
+        <h2>Posts(38)</h2>
+      </div>
+      <div className={styles.hidden_nav_right}>
+        <button className={styles.select_btn}>
+          <label>Filters : </label>
+          <select className={styles.select}>
+            <option>All</option>
+            <option>Article</option>
+            <option>Event</option>
+            <option>Education</option>
+            <option>Job</option>
+          </select>
+        </button>
+      </div>
       <hr className={styles.nav_borderline} />
     </div>
   )
