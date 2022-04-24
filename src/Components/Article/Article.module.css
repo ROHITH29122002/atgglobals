@@ -1,0 +1,136 @@
+.container{
+    display: grid;
+    grid-template-rows: repeat(5,auto);
+    width: 70%;
+    row-gap: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 3rem;
+}
+
+.container_2{
+    display: grid;
+    grid-template-rows: repeat(6,auto);
+    width: 70%;
+    row-gap: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 3rem;
+}
+
+.main_img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.type_heading{
+    padding: 1rem 2rem 0;
+}
+
+.desc_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem 0;
+    word-wrap: break-word;
+}
+
+.desc{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.desc_container button{
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    position: relative;
+    top: -1rem;
+    padding-right: 2rem;
+}
+
+.article_heading{
+    font-size: 1.8rem;
+    padding: 1rem 2rem 0;
+}
+
+.info_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+.info_left,.info_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_img{
+    margin-right: 1rem;
+}
+
+.info_right{
+    margin-right: 2rem;
+}
+
+.info_right button{
+    outline: 0;
+    border: 0;
+    background: transparent;
+    margin-left: 1rem;
+}
+
+.view_img{
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+}
+
+.details_container{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.date_container,.location_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.data_para,.location_para{
+    font-size: 1.5rem;
+    margin-left: .5rem;
+}
+
+.location_img{
+    width: 20px;
+    height: 20px;
+}
+
+.link_btn{
+    border: 2px solid #ccc;
+    color: red;
+    background-color: transparent;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0 2rem;
+}
+
+.success_btn{
+    color: #02B875;
+}
+
+
+@media screen and (max-width : 700px){
+    .container,.container_2{
+        width: 80%;
+        margin: 3rem;
+    }
+}
