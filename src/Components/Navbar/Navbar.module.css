@@ -6,11 +6,12 @@
 }
 
 .nav_logo_div{
-    padding: 2rem 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
     margin-left: 5rem;
 }
 .nav_search_div{
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 
@@ -38,7 +39,7 @@
 
 .nav_login_div{
     margin-right: 4rem;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .nav_login_heading{
@@ -81,10 +82,10 @@
         align-items: flex-start;
         flex-direction: column;
         position: absolute;
-        width: 99vw;
-        top: 6.5rem;
+        width: 100vw;
+        top: 5rem;
         height: 30vh;
-        padding-left: 4.5rem;
+        padding-left: 2.5rem;
         background-color: #fff;
         z-index: 10;
     }
@@ -97,5 +98,14 @@
 
     .nav_search_div,.nav_login_div{
         display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nav_logo_div{
+        margin-left: 3rem;
+    }
+    .nav_input{
+        width: 23rem;
     }
 }
