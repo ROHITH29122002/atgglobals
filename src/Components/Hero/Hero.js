@@ -21,7 +21,7 @@ function Hero() {
       </div>
       <div className={styles.hero_content_container}>
         <h1 className={styles.hero_content_heading}>Computer Engineering</h1>
-        <h3 className={styles.hero_content_para}>142,765 Computer Engineers follow this</h3>
+        <p className={styles.hero_content_para}>142,765 Computer Engineers follow this</p>
       </div>
     </div>
   )

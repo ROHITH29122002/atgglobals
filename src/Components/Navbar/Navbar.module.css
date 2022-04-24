@@ -82,7 +82,7 @@
         align-items: flex-start;
         flex-direction: column;
         position: absolute;
-        width: 100vw;
+        width: 100%;
         top: 5rem;
         height: 30vh;
         padding-left: 2.5rem;

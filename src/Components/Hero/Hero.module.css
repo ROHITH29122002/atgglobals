@@ -1,7 +1,7 @@
 
 .hero_container{
-    width: 100vw;
     height: 440px;
+    width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
     url(./hero3x.png);
     background-position: center;
@@ -19,7 +19,7 @@
 }
 
 .nav_icon_container{
-    margin-left: 5rem;
+    margin-left: 4rem;
 }
 
 .group_toggle_btn{
