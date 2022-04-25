@@ -25,7 +25,7 @@ function MainNav() {
           className={styles.nav_filter_btn}
           onClick = {() => {
             setactive( prevactive => {
-              return [false,!prevactive[1],false,false,false]
+              return [false,true,false,false,false]
             })
           }}
         >
@@ -36,7 +36,7 @@ function MainNav() {
         className={styles.nav_filter_btn}
         onClick = {() => {
           setactive( prevactive => {
-            return [false,false,!prevactive[2],false,false]
+            return [false,false,true,false,false]
           })
         }}
         >
@@ -46,7 +46,7 @@ function MainNav() {
         id={active[3] ? styles.clicked : ''}
         onClick = {() => {
           setactive( prevactive => {
-            return [false,false,false,!prevactive[3],false]
+            return [false,false,false,true,false]
           })
         }}
         className={styles.nav_filter_btn}
@@ -58,7 +58,7 @@ function MainNav() {
         className={styles.nav_filter_btn}
         onClick = {() => {
           setactive( prevactive => {
-            return [false,false,false,false,!prevactive[4]]
+            return [false,false,false,false,true]
           })
         }}
         >

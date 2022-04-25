@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Article.module.css'
 import article from './article.png'
 import education from './education.png'
@@ -15,6 +15,8 @@ import job from './job.svg'
 import location from './pin.png'
 
 function Article() {
+  const [clicked,setclicked] = useState([false,false,false])
+  console.log(clicked)
   return (
     <>
       <div className={`${styles.container}`}>
@@ -22,7 +24,22 @@ function Article() {
         <h2 className={styles.type_heading}>✍️ Article</h2>
         <div className={styles.desc_container}>
           <p className={styles.desc}>What if famous brands had regular fonts? Meet <br/>RegularBrands!</p>
-          <button><img className={styles.options_img} src={options} alt='options'/></button>
+          <button onClick = {() => {
+            setclicked( prevclicked => {
+              return [!prevclicked[0],false,false]
+            })
+          }}
+          >
+            <img className={styles.options_img} src={options} alt='options'/>
+          </button>
+          <div 
+          id={clicked[0] ? styles.clicked : ''} 
+          className={styles.options_collapse}
+          >
+            <span className={styles.options_span}>Edit</span>
+            <span className={styles.options_span}>Report</span>
+            <span className={styles.options_span}>Bookmark</span>
+          </div>
         </div>
         <p className={styles.article_heading}>I've worked in UX for the better part of a decade. From now on, I plan to rei…</p>
         <div className={styles.info_div}>
@@ -44,7 +61,23 @@ function Article() {
         <h2 className={styles.type_heading}>🔬️ Education</h2>
         <div className={styles.desc_container}>
           <p className={styles.desc}>Tax Benefits for Investment under National Pension <br/> Scheme launched by Government</p>
-          <button><img className={styles.options_img} src={options} alt='options'/></button>
+          <button
+          onClick = {() => {
+            setclicked( prevclicked => {
+              return [false,!prevclicked[1],false]
+            })
+          }}
+          >
+            <img className={styles.options_img} src={options} alt='options'/>
+          </button>
+          <div 
+          id={clicked[1] ? styles.clicked : ''} 
+          className={styles.options_collapse}
+          >
+            <span className={styles.options_span}>Edit</span>
+            <span className={styles.options_span}>Report</span>
+            <span className={styles.options_span}>Bookmark</span>
+          </div>
         </div>
         <p className={styles.article_heading}>I've worked in UX for the better part of a decade. From now on, I plan to rei…</p>
         <div className={styles.info_div}>
@@ -66,7 +99,23 @@ function Article() {
         <h2 className={styles.type_heading}>🗓️ Meetup</h2>
         <div className={styles.desc_container}>
           <p className={styles.desc}>Finance &amp; Investment Elite Social Mixer @Lujiazui</p>
-          <button><img className={styles.options_img} src={options} alt='options'/></button>
+          <button
+            onClick = {() => {
+              setclicked( prevclicked => {
+                return [false,false,!prevclicked[2]]
+              })
+            }}
+          >
+            <img className={styles.options_img} src={options} alt='options'/>
+          </button>
+          <div 
+          id={clicked[2] ? styles.clicked : ''} 
+          className={styles.options_collapse}
+          >
+            <span className={styles.options_span}>Edit</span>
+            <span className={styles.options_span}>Report</span>
+            <span className={styles.options_span}>Bookmark</span>
+          </div>
         </div>
         <div className={styles.details_container}>
           <div className={styles.date_container}>
