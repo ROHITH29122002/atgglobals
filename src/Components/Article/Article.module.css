@@ -128,7 +128,7 @@
 }
 
 
-@media screen and (max-width : 700px){
+@media screen and (max-width : 750px){
     .container,.container_2{
         width: 80%;
         margin: 3rem;
