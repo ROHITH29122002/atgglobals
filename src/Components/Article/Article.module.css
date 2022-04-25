@@ -130,7 +130,7 @@
 
 @media screen and (max-width : 750px){
     .container,.container_2{
-        width: 80%;
-        margin: 3rem;
+        width: 90%;
+        margin: 2rem;
     }
 }
