@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styles from './Articles.module.css'
 import Article from '../Article/Article'
 import location from '../Article/pin.png'
@@ -11,6 +11,7 @@ import group3 from './group3.png'
 import group4 from './group4.png'
 
 function Articles() {
+  const [clicked,setclicked] = useState([false,false,false,false])
   return (
     <div className={styles.articles_container}>
         <div className={styles.articles_left}>
@@ -38,19 +39,59 @@ function Articles() {
           <div className={styles.group_container}>
             <div className={styles.group}>
               <img className={styles.group_img} src={group1} alt='group1'/>
-              <button className={styles.follow_btn}>Follow</button>
+              <button 
+              className={styles.follow_btn}
+              id = {clicked[0] ? styles.clicked : ''}
+              onClick = {() => {
+                setclicked( prevclicked => {
+                  return [!prevclicked[0],false,false,false]
+                })
+              }}
+              >
+                {clicked[0] ? 'Followed' : 'Follow'}
+              </button>
             </div>
             <div className={styles.group}>
             <img className={styles.group_img} src={group2} alt='group2'/>
-              <button className={styles.follow_btn}>Follow</button>
+              <button 
+              className={styles.follow_btn}
+              id = {clicked[1] ? styles.clicked : ''}
+              onClick = {() => {
+                setclicked( prevclicked => {
+                  return [false,!prevclicked[1],false,false]
+                })
+              }}
+              >
+                {clicked[1] ? 'Followed' : 'Follow'}
+              </button>
             </div>
             <div className={styles.group}>
             <img className={styles.group_img} src={group3} alt='group3'/>
-              <button className={styles.follow_btn}>Follow</button>
+              <button 
+              id = {clicked[2] ? styles.clicked : ''}
+              className={styles.follow_btn}
+              onClick = {() => {
+                setclicked( prevclicked => {
+                  return [false,false,!prevclicked[2],false]
+                })
+              }}
+              >
+                {clicked[2] ? 'Followed' : 'Follow'}
+              </button>
             </div>
             <div className={styles.group}>
             <img className={styles.group_img} src={group4} alt='group4'/>
-              <button className={styles.follow_btn}>Follow</button>
+              <button 
+              id = {clicked[3] ? styles.clicked : ''}
+              className={styles.follow_btn}
+              onClick = {() => {
+                setclicked( prevclicked => {
+                  return [false,false,false,!prevclicked[3]]
+                })
+              }}
+              >
+                {clicked[3] ? 'Followed' : 'Follow'}
+              </button>
             </div>
           </div>
         </div>

@@ -22,14 +22,14 @@
     color: #8A8A8A;
 }
 
-#clicked{
+#active{
     color: black;
     border-bottom: 2px solid black;
 }
 
 .nav_borderline{
     position: absolute;
-    top: 3.8rem;
+    top: 4rem;
     height: 2px;
     width: 100%;
     background-color: #ccc;
@@ -61,6 +61,10 @@
 .group_btn{
     background: #2F6CE5;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5rem;
 }
 
 .users_img{
@@ -82,6 +86,17 @@
     border: 0;
     outline: 0;
     background-color: rgb(239, 239, 239);
+    
+}
+
+#clicked{
+    color: black;
+    background-color: transparent;
+    border: 1px solid #ccc;
+}
+
+#nav_borderline{
+    top: 4.3rem;
 }
 
 

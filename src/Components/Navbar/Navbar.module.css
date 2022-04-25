@@ -43,6 +43,10 @@
 }
 
 .nav_login_heading{
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
     font-weight: medium;
     font-size: 1.6rem;
     line-height: 20px;

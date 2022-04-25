@@ -98,6 +98,11 @@
     border-radius: 10px;
 }
 
+#clicked{
+    color: #fff;
+    background-color: black;
+}
+
 @media screen and (max-width : 750px){
 
     .articles_container{
