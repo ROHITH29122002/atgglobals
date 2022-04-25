@@ -103,7 +103,7 @@
     background-color: black;
 }
 
-@media screen and (max-width : 750px){
+@media screen and (max-width : 800px){
 
     .articles_container{
         justify-content: center;

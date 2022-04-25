@@ -166,12 +166,21 @@
         justify-content: center;
         margin-left:10%;
     }
+    .close_btn{
+        right: 2rem;
+    }
 }
 
 @media screen and (max-width : 500px){
-    
+    .close_btn{
+        top: 35%;
+        right: 1rem;
+    }
 
+    .body{
+        top: 70%;
+    }
     .info_div{
-        margin-left: 15%;
+        margin-left: 10%;
     }
 }

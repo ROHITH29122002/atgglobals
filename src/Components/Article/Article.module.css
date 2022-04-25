@@ -153,7 +153,7 @@
     z-index: 10;
 }
 
-@media screen and (max-width : 750px){
+@media screen and (max-width : 800px){
     .container,.container_2{
         width: 90%;
         margin: 2rem;
